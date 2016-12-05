@@ -96,6 +96,9 @@ h1 {
     float: left;
 }
 
+.book-title {
+    font-size: 18px;
+}
 
 .bio {
     position: relative;
@@ -104,9 +107,18 @@ h1 {
 	line-height: 150%;
 	font-size: 14px;
 	color: #bfbec7;
-    clear: both;
     -webkit-animation: fadeInUp 0.5s;
     animation: fadeInUp 0.5s;
+}
+
+.publications {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color:#eee;
+}
+
+.publications:hover {
+    text-decoration: underline;
 }
 
 #social {
@@ -175,8 +187,19 @@ h1 {
     width: 25%;
     height: auto;
     margin-right: 20px;
+    margin-bottom: 5px;
     -webkit-animation: fadeInUp 0.5s;
     animation: fadeInUp 0.5s;    
+}
+
+#liska-img {
+    float: left;
+    width: 25%;
+    height:auto;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    -webkit-animation: fadeInUp 0.5s;
+    animation: fadeInUp 0.5s;
 }
 
 #synopsis {
@@ -241,7 +264,3 @@ h1 {
     line-height: 75px;
     /* line-height: 85px; */
 }
-
-
-
-
