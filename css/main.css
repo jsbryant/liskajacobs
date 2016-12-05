@@ -114,12 +114,12 @@ h1 {
 
 .publications {
     font-family: 'Lato', sans-serif;
-    text-decoration: none;
+    text-decoration: underline;
     color:#eee;
 }
 
 .publications:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #social {
