@@ -1,0 +1,247 @@
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientBackground { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* ref: css gradient animator www.gradient-animator.com */
+    background: linear-gradient(250deg, #26607e, #573f66, #231f2f);
+    background-size: 600% 600%;
+    -webkit-animation: GradientBackground 50s ease infinite;
+    -moz-animation: GradientBackground 50s ease infinite;
+    animation: GradientBackground 50s ease infinite;
+    margin: 0 0 170px;    
+}
+
+.wrap {
+	margin:45px auto;
+	width: 650px;
+}
+
+@media screen and (max-width: 700px) {
+    .wrap {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrap {
+        width: 365px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrap {
+        width: 320px;
+    }
+    .site-footer {
+        font-size: 8px;
+    }
+    #social li {
+        padding-left: 0px !important;
+        padding-right: 15px;
+    }
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+    color: #eee;
+    font-size: 29px;
+    text-align: left;
+    float: left;
+}
+
+
+.bio {
+    position: relative;
+	margin:0 0 20px 0;
+	font-family: 'Lato', sans-serif;
+	line-height: 150%;
+	font-size: 14px;
+	color: #bfbec7;
+    clear: both;
+    -webkit-animation: fadeInUp 0.5s;
+    animation: fadeInUp 0.5s;
+}
+
+#social {
+	list-style-type: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#social li {
+    display: inline;
+    padding-left: 20px;
+}
+
+#social a {
+    position: relative;
+    top: 12px;
+	color: #cc7f4f;
+    transition: all 0.075s ease-in-out;
+}
+
+#social a:hover {
+    top: 10px;
+    color: #f5877a;
+}
+
+#nav {
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    clear: both;
+}
+
+#nav li {
+    display: inline;
+    padding-right: 20px;
+}
+
+#nav a {
+    color: #cc7f4f;
+    text-decoration: none;
+    transition: all 0.075s ease-in-out;
+}
+
+#nav a:hover:not(.active) {
+    color: #f5877a;
+}
+
+#nav li.active a {
+    color: #f5877a;
+    font-weight: bold;
+}
+
+#line {
+    width: 60px;
+    height: 4px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+#bookcover {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin-right: 20px;
+    -webkit-animation: fadeInUp 0.5s;
+    animation: fadeInUp 0.5s;    
+}
+
+#synopsis {
+    width: 100%;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 150%;
+    font-size: 14px;
+    color: #bfbec7;
+    -webkit-animation: fadeInUp 0.5s;
+    animation: fadeInUp 0.5s;
+}
+
+.retailers {
+    position: relative;
+    width: 33%;
+    float: left;
+    display: block;
+}
+
+.site-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    /* height: 175px; */
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: rgba(255,255,255,0.3);
+    float: left;
+}
+
+.retail-wrap {
+    margin-top: 0 !important;
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+.site-footer ul {
+    list-style-type: none;
+}
+
+.site-footer ul li {
+    text-align: left;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.3);
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.rights {
+    padding-top: 0;
+    clear: both;
+    line-height: 75px;
+    /* line-height: 85px; */
+}
+
+
+
+
