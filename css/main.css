@@ -55,6 +55,7 @@ body {
 	position: relative;
 	top:0; left:0;
 	margin:0 auto;
+	padding-top: 10px;
 	width:90%;
 	max-width: 800px;
     background: none;
@@ -198,6 +199,7 @@ nav {
 }
 
 .header {
+	font-family: 'Open Sans', sans-serif;
 	color:#eee;
 	font-size: 20px;
 }
@@ -210,6 +212,12 @@ nav {
 .bio {
 	font-family: 'Open Sans', sans-serif;
 	color:rgba(255, 255, 255, 0.6);
+}
+
+.essays {
+	font-family: 'Open Sans', sans-serif;
+	color:rgba(255, 255, 255, 0.6);
+	line-height: 30px;
 }
 
 footer {
