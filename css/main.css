@@ -45,6 +45,10 @@ body {
     animation: GradientBackground 59s ease infinite;
 }
 
+.fadeInBlock {
+    opacity:0;
+}
+
 #wrap {
 	margin:0 auto;
 	width:90%;
