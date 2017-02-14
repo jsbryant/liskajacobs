@@ -14,19 +14,6 @@
     100%{background-position:0% 50%}
 }
 
-@media screen and (max-width: 480px) {
-    #nav-social li a {
-    	font-size: 14px;
-    	padding-left: none;
-    }
-    h1 {
-    	font-size: 22px;
-    }
-    p {
-    	font-size: 14px;
-    }
-}
-
 * {
 	margin:0;
 	padding:0;
@@ -243,4 +230,16 @@ footer {
 	line-height: 40px;
 }
 
+@media screen and (max-width: 480px) {
+    #nav-social li a {
+    	font-size: 14px;
+    	padding-left: none;
+    }
+    h1 {
+    	font-size: 22px;
+    }
+    p {
+    	font-size: 14px;
+    }
+}
 
