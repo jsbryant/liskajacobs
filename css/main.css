@@ -122,7 +122,8 @@ nav {
 .section {
     position:relative;
     top:0; left:0;
-	height:100vh;    
+	height:100%;
+	min-height:700px;    
 	width:100vw;
 	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
@@ -130,10 +131,9 @@ nav {
 #section-container {
 	margin: 0 auto;
 	padding-top: 120px;
-	height:380px;
+	height:100%;
 	width:90vw;
 	max-width: 800px;
-	overflow: scroll;
 }
 
 .section a {
@@ -169,12 +169,12 @@ nav {
 /* @end of sections */
 
 #bookcover {
-	width:35%;
-	max-width: 200px;
+	width:45%;
+	max-width: 280px;
 	height:auto;
 	float: left;
 	padding-right: 20px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 
 #liska-img {
@@ -200,6 +200,7 @@ nav {
 #synopsis {
 	font-family: 'Open Sans', sans-serif;
 	color:rgba(255, 255, 255, 0.6);
+	margin-bottom:100px;
 }
 
 .bio {
