@@ -34,7 +34,7 @@
 	<section id="books" class="section">
 		<div id="section-container">
       		<img src="images/bookcover.png" alt="book cover" id="bookcover">
-      		<p id="synopsis"><span class="book-title">Catalina</span><br><i>Coming September 2017 from MCD, a new imprint from Farrar, Straus and Giroux</i><br><br>Elsa Fisher is adrift. She has just been fired from MoMA on the heels of an affair with her married boss and is returning to Los Angeles with a hefty severance package and a fistful of pills to numb the pain. Her abandoned crew of college friends (childhood friend Charlotte, her wayward husband Jared, and Elsa’s ex-husband Robby) receive her with open arms and a plan to celebrate their reunion on a booze-soaked sailing trip to Catalina Island.<br><br>Elsa’s friends believe she’s on vacation, but her carefully maintained façade starts to crack on Catalina, barely concealing her loneliness and rage, not to mention a snowballing addiction. It doesn’t help that her friends have secrets of their own—underneath all the forced comradery lurks painful memories and strained ties—and Elsa’s determined unraveling threatens to drag everyone down with her.</p>
+      		<p id="synopsis"><span class="book-title">Catalina&nbsp;&nbsp;</span><a href="http://us.macmillan.com/catalina/liskajacobs/9780374119751/" target="_blank"><i>Pre Order</i></a><br><i>Coming November 2017 from MCD, a new imprint from Farrar, Straus and Giroux</i><br><br>Elsa Fisher is headed for rock bottom. At least, that’s her plan. She has just been fired from MoMA on the heels of an affair with her married boss, and she retreats to Los Angeles to blow her severance package on whatever it takes to numb the pain. Her abandoned crew of college friends (childhood friend Charlotte and her wayward husband, Jared; and Elsa’s ex-husband, Robby) receive her with open arms, and, thinking she’s on vacation, a plan to celebrate their reunion on a booze-soaked sailing trip to Catalina Island.<br><br>But Elsa doesn’t want to celebrate. She is lost, lonely, and full of rage, and only wants to sink as low as the drugs and alcohol will take her. On Catalina, her determined unraveling and recklessness expose painful memories and dark desires, putting everyone in the group at risk.<br><br>With the creeping menace of Patricia Highsmith and the bender-chic of Bret Easton Ellis, Liska Jacobs brings you inside the mind of an angry, reckless young woman hell-bent on destruction—every page taut with the knowledge that Elsa’s path does not lead to a happy place. Catalina is a compulsive, deliciously dark exploration of beauty, love, and friendship, and the sometimes toxic desires that drive us.</p>
       	</div>
 	</section>
 	<section id="writings" class="section fadeInBlock">
@@ -56,7 +56,7 @@
 	<section id="about" class="section fadeInBlock">
 		<div id="section-container">
 			<img src="images/liska.jpg" alt="Liska Jacobs" id="liska-img">
-      		<p class="bio">Liska Jacobs holds an MFA from the University of California Riverside Palm Desert. Her work has appeared in <a href="http://therumpus.net/2015/11/the-sunday-rumpus-essay-catalina/" target="_blank">The Rumpus</a>, <a href="http://lithub.com/in-praise-of-the-mighty-zine/" target="_blank">Literary Hub</a>, <a href="https://lareviewofbooks.org/article/santa-anas" target="_blank">Los Angeles Review of Books</a>, <a href="http://www.themillions.com/2015/03/our-best-work-on-man-rays-hollywood-album-and-me.html" target="_blank">The Millions</a>, <a href="https://thehairpin.com/what-jean-rhys-taught-me-about-loneliness-230387bab743" target="_blank">The Hairpin</a>, <a href="http://www.thenervousbreakdown.com/jacobsl/2015/08/elizabeth/" target="_blank">The Nervous Breakdown</a>, <a href="https://minorliteratures.com/2016/09/21/cocktail-napkin-musso-liska-jacobs/" target="_blank">Minor Literatures</a> and <a href="http://themanifeststation.net/2016/05/02/childhood-revisited/" target="_blank">The Manifest-Station</a>. She lives in Los Angeles with her husband.</p>
+      		<p class="bio">Liska Jacobs holds an MFA from the University of California, Riverside. Her essays and short fiction have appeared in <a href="http://therumpus.net/2015/11/the-sunday-rumpus-essay-catalina/" target="_blank"><i>The Rumpus</i></a>, <a href="https://lareviewofbooks.org/article/santa-anas" target="_blank"><i>Los Angeles Review of Books</i></a>, <a href="http://lithub.com/in-praise-of-the-mighty-zine/" target="_blank"><i>Literary Hub</i></a>, <a href="http://www.themillions.com/2015/03/our-best-work-on-man-rays-hollywood-album-and-me.html" target="_blank"><i>The Millions</i></a>, and <a href="https://thehairpin.com/what-jean-rhys-taught-me-about-loneliness-230387bab743" target="_blank"><i>The Hairpin</i></a>, among other publications. Catalina is her first novel.</p>
       	</div>
 	</section>
 	<section id="contact" class="section fadeInBlock">
@@ -85,22 +85,14 @@ $(document).ready(function(){
 });
 $(function() {
     $(window).scroll( function(){
-    
-       
         $('.fadeInBlock').each( function(i){
-            
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
             bottom_of_window = bottom_of_window + 500;  
-          
             if( bottom_of_window > bottom_of_object ){
-                
                 $(this).animate({'opacity':'1'},500);
-                    
             }
         }); 
-    
     });
 });
 </script>
