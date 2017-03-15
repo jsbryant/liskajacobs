@@ -1,0 +1,291 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+html {
+  overflow-y:scroll;
+}
+
+body {
+  font-family:'Montserrat', sans-serif;
+  color:WHITESMOKE;
+  font-size: 16px;
+}
+
+h1 {
+  color:#222;
+}
+
+#name {
+  width:40%;
+  min-width:300px;
+  max-width:400px;
+  height:auto;
+}
+
+nav {
+  position: fixed;
+  padding:20px 0;
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+  z-index:5;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  position: relative;
+  display:inline;
+  margin-right:16px;
+}
+
+nav > ul > li:last-child {
+  margin-right:0;
+}
+
+nav > ul > li > a {
+  text-decoration:none;
+  color:WHITESMOKE;
+}
+
+nav > ul > li > a::after {
+  position:absolute;
+  top:100%;
+  left:0;
+  content:'';
+  width:0%;
+  height:2px;
+  -webkit-transition:all 0.3s cubic-bezier(1, 0, 0, 1);
+  transition:all 0.3s cubic-bezier(1, 0, 0, 1);
+  background:WHITESMOKE;
+}
+
+nav > ul > li > a:hover::after {
+  width:100%;
+}
+
+#arrow {
+  position: fixed;
+  bottom:48px;
+  width:100%;
+  -webkit-animation: arrowAnim 1.2s infinite;
+  animation: arrowAnim 1.2s infinite;
+}
+
+@-webkit-keyframes arrowAnim {
+    0%   {bottom: 48px;}
+    50%  {bottom: 58px;}
+    100% {bottom: 48px;}
+}
+
+/* Standard syntax */
+@keyframes arrowAnim {
+    0%   {bottom: 48px;}
+    50%  {bottom: 58px;}
+    100% {bottom: 48px;}
+}
+
+.section {
+  width:100vw;
+  height:100vh;
+  text-align: center;
+}
+
+#section1 {
+  background:WHITE;
+  z-index:6;
+}
+
+#section2 {
+  background:SALMON;
+  z-index:4;
+}
+
+#section3 {
+  background:LIGHTSEAGREEN;
+  z-index:3;
+}
+
+#section4 {
+  background:CORNFLOWERBLUE;
+  z-index:2;
+}
+
+#section5 {
+  background:SLATEGRAY;
+  z-index:1;
+}
+
+.centered-horiz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width:80%;
+  max-width: 760px;
+}
+
+#bookcover {
+  width: 285px;
+  height:auto;
+  float: left;
+  padding-right: 16px;
+  padding-bottom: 10px;
+}
+
+#synopsis {
+  float: left;
+  display: block;
+  width:450px;
+  text-align: left;
+  line-height: 24px;
+}
+
+#synopsis > a {
+  text-decoration:none;
+  color:WHITESMOKE;
+}
+
+#essays-lg-vw {
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#essays-lg-vw > .list {
+  list-style-type:none;
+  color:rgba(245,245,245,0.6);
+}
+
+#essays-lg-vw > .list > a {
+  text-decoration:none;
+  color:WHITESMOKE;
+}
+
+#essays-sm-vw {
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#essays-sm-vw > .list {
+  list-style-type:none;
+}
+
+#essays-sm-vw > .list > a {
+  text-decoration:none;
+  color:WHITESMOKE;
+}
+
+.book-title {
+  font-size: 1.5rem;
+}
+
+#liska-img {
+  width: 160px;
+  height:auto;
+  clear: both;
+  margin-bottom:16px;
+}
+
+#bio {
+  margin: auto;
+  line-height: 24px;
+  max-width: 600px;
+}
+
+#contact {
+  line-height: 24px;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#contact > a {
+  text-decoration:none;
+  color:WHITESMOKE;
+}
+
+.social {
+  margin-right: 24px;
+}
+
+footer {
+  position:fixed;
+  padding:16px 0;
+  bottom:0;
+  left:0;
+  width:100%;
+  color:rgba(0,0,0,0.2);
+  font-size:0.7rem;
+  text-align: center;
+  background:none;
+  z-index:4;
+}
+
+@media screen and (max-width: 941px) {
+  #synopsis {
+    display:none;
+  }
+  #bookcover {
+    float:none;
+    padding:0;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  #essays-lg-vw {
+    display:block;
+  }
+  #essays-sm-vw {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  #essays-lg-vw {
+    display:none;
+  }
+  #essays-sm-vw {
+    display:block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #bookcover {
+    width:200px;
+  }
+  #bio {
+    font-size: 0.8rem;
+    line-height:24px;
+  }
+  #liska-img {
+    width:140px;
+  }
+  #essays-sm-vw {
+    font-size: 0.8rem;
+    line-height: 16px;
+  }
+  #contact {
+    font-size:0.8rem;
+    line-height:24px;
+  }
+}
