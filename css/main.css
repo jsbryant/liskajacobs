@@ -24,6 +24,8 @@ h1 {
   height:auto;
 }
 
+/* REMOVED NAV
+
 nav {
   position: fixed;
   padding:20px 0;
@@ -68,6 +70,8 @@ nav > ul > li > a::after {
 nav > ul > li > a:hover::after {
   width:100%;
 }
+
+*/
 
 #arrow {
   position: fixed;
@@ -226,7 +230,7 @@ nav > ul > li > a:hover::after {
 #bio {
   margin: auto;
   line-height: 22px;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 #contact {
