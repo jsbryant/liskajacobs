@@ -156,8 +156,8 @@ nav > ul > li > a:hover::after {
   top:-3px;
   background:WHITESMOKE;
   color:SALMON !important;
-  padding:3px 8px;
-  border-radius:3px;
+  padding: 3px 12px;
+  border-radius: 12px;
 }
 
 #synopsis {
