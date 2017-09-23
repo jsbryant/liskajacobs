@@ -173,11 +173,6 @@ section a:hover, a:visited {
 	height: auto;
 }
 
-#book-synopsis {
-	float: left;
-	max-width: 480px;
-}
-
 footer {
 	text-align: center;
 	color: rgba(255,255,255,0.3) !important;
