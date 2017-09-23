@@ -8,87 +8,221 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.png" type="image/gif">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
 </head>
 <body>
-<!--
-	<nav>
-		<ul id="menu">
-			<li data-menuanchor="page2"><a href="#page2">Home</a></li>
-			<li class="nav-item" data-menuanchor="page3"><a href="#page3">Writings</a></li>
-			<li class="nav-item" data-menuanchor="page4"><a href="#page4">About</a></li>
-			<li class="nav-item" data-menuanchor="page5"><a href="#page5">Contact</a></li>
-		</ul>
-	</nav>
--->
-	<div id="pagepiling">
-		<div class="section" id="section1">
-			<img src="images/liska-jacobs.png" alt="Liska Jacobs script font" id="name">
-			<a href="#Catalina"><div id="arrow">
-				<svg width="20" height="13" viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-  					<path d="M10 8.657L2.222.88.102 3l8.837 8.84L10 12.9 19.9 3 17.777.88 10 8.656z" fill="#222" fill-rule="evenodd"/>
-				</svg>
-			</div></a>
+
+	<header>
+		<div class="container">
+		<!-- LOGO -->	
+			<div id="logo">Liska Jacobs</div>
+
+		<!-- NAV -->
+			<nav class="navbar-default">
+				<ul id="menu">
+					<li><a href="#events">Events</a></li>
+					<li><a href="#writings">Writings</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#press">Press</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
 		</div>
-		<div class="section" id="section2">
-			<div class="centered-horiz">
+	</header>
+
+	<main>
+
+	<!-- CATALINA BOOK COVER / SYNOPSIS -->
+
+		<section id="synopsis">
+
+			<div class="container">
 
 				<!-- Book Cover -->
-				<a href="http://us.macmillan.com/catalina/liskajacobs/9780374119751/" target="_blank"><img src="images/catalina.jpg" alt="book cover" id="bookcover"></a>
-				<!-- End Book Cover -->
+				<img src="images/cat-cover.png" alt="Catalina book cover" id="bookcover">
 
 				<!-- Book Description -->
-      			<p id="synopsis"><span class="book-title">Catalina&nbsp;&nbsp;</span><a class="preorder" href="http://us.macmillan.com/catalina/liskajacobs/9780374119751/" target="_blank">Pre Order</a><br><br><span style="opacity:0.6;"><i>Coming November 2017 from MCD/FSG Originals.</i></span><br><br>Elsa Fisher is headed for rock bottom. At least, that’s her plan. She has just been fired from MoMA on the heels of an affair with her married boss, and she retreats to Los Angeles to blow her severance package on whatever it takes to numb the pain. Her abandoned crew of college friends (childhood friend Charlotte and her wayward husband, Jared; and Elsa’s ex-husband, Robby) receive her with open arms, and, thinking she’s on vacation, a plan to celebrate their reunion on a booze-soaked sailing trip to Catalina Island.<br><br>But Elsa doesn’t want to celebrate. She is lost, lonely, and full of rage, and only wants to sink as low as the drugs and alcohol will take her. On Catalina, her determined unraveling and recklessness expose painful memories and dark desires, putting everyone in the group at risk.</p>
-      			<!-- End Book Description -->
+	  			<p id="book-synopsis"><h1>Catalina</h1><br><span style="opacity:0.6;"><i>Coming November 2017 from MCD/FSG Originals.</i></span><br><br>Elsa Fisher is headed for rock bottom. At least, that’s her plan. She has just been fired from MoMA on the heels of an affair with her married boss, and she retreats to Los Angeles to blow her severance package on whatever it takes to numb the pain. Her abandoned crew of college friends (childhood friend Charlotte and her wayward husband, Jared; and Elsa’s ex-husband, Robby) receive her with open arms, and, thinking she’s on vacation, a plan to celebrate their reunion on a booze-soaked sailing trip to Catalina Island.<br><br>But Elsa doesn’t want to celebrate. She is lost, lonely, and full of rage, and only wants to sink as low as the drugs and alcohol will take her. On Catalina, her determined unraveling and recklessness expose painful memories and dark desires, putting everyone in the group at risk.</p><br>
+	  			<a class="preorder" href="http://us.macmillan.com/catalina/liskajacobs/9780374119751/" target="_blank"><strong>Pre Order Now</strong></a>
 
-      		</div>
-		</div>
-		<div class="section" id="section3">
-			<ul id="essays-lg-vw">
-				<li class="list"><i> Los Angeles Review of Books, </i><a href="https://lareviewofbooks.org/article/dreaming-jacaranda/" target="_blank">Dreaming Jacaranda</a></li><br>
-				<li class="list"><i> The Rumpus, </i><a href="http://therumpus.net/2015/11/the-sunday-rumpus-essay-catalina/" target="_blank">Catalina</a></li><br>
-				<li class="list"><i> Literary Hub, </i><a href="http://lithub.com/in-praise-of-the-mighty-zine/" target="_blank">In Praise of the Mighty Zine</a></li><br>
-				<li class="list"><i> Los Angeles Review of Books, </i><a href="https://lareviewofbooks.org/article/santa-anas" target="_blank">Santa Anas</a></li><br>
-				<li class="list"><i> The Millions, </i><a href="http://www.themillions.com/2015/03/our-best-work-on-man-rays-hollywood-album-and-me.html" target="_blank">Our Best Work: On Man Ray's Hollywood Album and Me</a></li><br>
-				<li class="list"><i> The Hairpin, </i><a href="https://thehairpin.com/what-jean-rhys-taught-me-about-loneliness-230387bab743" target="_blank">What Jean Rhys Taught Me About Loneliness</a></li><br>
-				<li class="list"><i> The Nervous Breakdown, </i><a href="http://www.thenervousbreakdown.com/jacobsl/2015/08/elizabeth/" target="_blank">Elizabeth</a></li><br>
-				<li class="list"><i> Minor Literatures, </i><a href="https://minorliteratures.com/tag/liska-jacobs/" target="_blank">Cocktail Napkin Series</a></li><br>
-				<li class="list"><i> The Manifest-Station, </i><a href="http://themanifeststation.net/2016/05/02/childhood-revisited/" target="_blank">Childhood Revisited</a></li>
-			</ul>
-			<ul id="essays-sm-vw">
-				<li class="list"><a href="https://lareviewofbooks.org/article/dreaming-jacaranda/" target="_blank"><i>Los Angeles Review of Books</i></a></li><br>
-				<li class="list"><a href="http://therumpus.net/2015/11/the-sunday-rumpus-essay-catalina/" target="_blank"><i>The Rumpus</i></a></li><br>
-				<li class="list"><a href="http://lithub.com/in-praise-of-the-mighty-zine/" target="_blank"><i>Literary Hub</i></a></li><br>
-				<li class="list"><a href="https://lareviewofbooks.org/article/santa-anas" target="_blank"><i>Los Angeles Review of Books</i></a></li><br>
-				<li class="list"><a href="http://www.themillions.com/2015/03/our-best-work-on-man-rays-hollywood-album-and-me.html" target="_blank"><i>The Millions</i></a></li><br>
-				<li class="list"><a href="https://thehairpin.com/what-jean-rhys-taught-me-about-loneliness-230387bab743" target="_blank"><i>The Hairpin</i></a></li><br>
-				<li class="list"><a href="http://www.thenervousbreakdown.com/jacobsl/2015/08/elizabeth/" target="_blank"><i>The Nervous Breakdown</i></a></li><br>
-				<li class="list"><a href="https://minorliteratures.com/tag/liska-jacobs/" target="_blank"><i>Minor Literatures</i></a></li><br>
-				<li class="list"><a href="http://themanifeststation.net/2016/05/02/childhood-revisited/" target="_blank"><i>The Manifest-Station</i></a></li>
-			</ul>
-		</div>
-		<div class="section" id="section4">
-			<div class="centered-horiz">
-				<img src="images/liska.png" alt="Liska Jacobs" id="liska-img">
-      			<p id="bio">Liska Jacobs holds an MFA from the University of California, Riverside. Her essays and short fiction have appeared in <i>The Rumpus</i>, <i>Los Angeles Review of Books</i>, <i>Literary Hub</i>, <i>The Millions</i>, and <i>The Hairpin</i>, among other publications.<br><i>Catalina</i> is her first novel.</p>
-      		</div>
-		</div>
-		<div class="section" id="section5">
-			<p id="contact"><span style="opacity:0.6;">Follow:</span><br><a class="social" href="http://liskab.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a><a class="social" href="https://www.facebook.com/liska.jacobs?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a><a class="social" href="https://twitter.com/LiskaJacobs" target="_blank"><i class="fa fa-twitter"></i></a><a class="social" style="margin:0px;" href="https://www.instagram.com/liskab/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a><br><br><span style="opacity:0.6;">Email:</span><br><a href="mailto:liska@liskajacobs.com">liska@liskajacobs.com</a><br><br><span style="opacity:0.6;">Representation:</span><br>Dara Hyde<br>Hill Nadell Literary Agency<br><a href="http://www.hillnadell.com/" target="_blank">www.hillnadell.com</a></p>
-		</div>
-	</div>
+	  		</div>
+
+		</section>
+
+	<!-- BLURB -->
+
+		<section id="blurb">
+
+			<div class="container">
+
+	  			<p class="quote"><i>“Catalina is true California, down to the bones and skin, a novel about the places Liska Jacobs knows in her soul...”</i></span><br><span style="opacity:0.6; font-size: 16px;">Susan Straight, author of <i>Between Heaven</i> and <i>Here and Highwire Moon</i></p>
+
+	  		</div>
+
+		</section>
+
+	<!-- EVENTS -->
+
+		<section id="events">
+
+			<div class="container">
+				<h1>Events</h1><br>
+				<p class="event event-one"><strong>Southern California Independent Booksellers Association (SCIBA)</strong><br><span class="date-info">Oct 27 - 28</span></p><br>
+				<p class="event event-two"><strong>Catalina Book Launch Celebration!</strong><br><span class="date-info">The Last Bookstore<br>Nov 9, 7:30 - 9:00 pm</span></p><br>
+				<p class="event event-three"><strong>In Conversation with David Ulin</strong><br><span class="date-info">Skylight Books<br>Nov 15, 7:30 - 9:00 pm</span></p><br>
+				<p class="event event-four"><strong>UCR Arts &amp; Letters Author Series: In Conversation with Tod Goldberg</strong><br><span class="date-info">UCR Palm Desert<br>Nov 16, 6:00 - 7:30 pm</span></p><br>
+				<p class="event event-five"><strong>It's Five O'Clock Somewhere Reading Series</strong><br><span class="date-info">Mandrake Bar<br>Dec 10, 7:00 pm</span></p><br>
+				<p class="event event-six"><strong>Meet the Authors</strong><br><span class="date-info">San Clemente Friends of the Library<br>Feb 24, 12:00 pm</span></p><br><br>
+				<p><i><span class="date-info">For possible events or press queries contact <span></i><a style="color: #000; text-decoration: underline;" href="mailto:fsg.publicity@fsgbooks.com">MCD.</a></p>
+			</div>
+
+				<!-- <div>
+					<p class="quote">“The narrative tone of Jacobs' debut echoes the numbed nihilism of Bret Easton Ellis' early work, and her protagonist is just as lovely a person as his infamous characters. For those who appreciate the joys of a vicarious bender and the satisfaction of watching creepy people decompensate.”<br><span style="opacity:0.6;"><i>―Kirkus</i></span></p><br>
+				</div>
+
+				<div>
+					<p class="quote">“Sophisticated and surprising, <i>Catalina</i> brings an excitingly modern vibe to the time-honored story of a young woman coming undone in California. Like a love child of Joan Didion and Kate Braverman, Liska Jacobs is a master of menacing cool and the seductive havoc wreaked by self-destruction.”<br><span style="opacity:0.6;">Gina Frangello, author of <i>A Life in Men</i> and <i>Every Kind of Wanting</i></span></p><br>
+				</div> -->
+
+		</section>
+
+	<!-- BLURB -->
+
+		<section id="blurb">
+
+			<div class="container">
+				<p class="quote"><i>“Catalina deftly explores the desperate social frontiers where the morals of the privileged class dissolve. You won’t be able to look away.”</i><br><span style="opacity:0.6; font-size: 16px;">J. Ryan Stradal, <i>――New York Times</i>-bestselling author of <i>Kitchens of the Great Midwest</i></span></p>
+	  		</div>
+
+		</section>
+
+	<!-- WRITINGS -->
+
+		<section id="writings">
+
+			<div class="container">
+
+				<h1>Writings</h1><br>
+				<ul>
+					<li class="list"><i>Los Angeles Review of Books, </i><a href="https://lareviewofbooks.org/article/dreaming-jacaranda/" target="_blank">Dreaming Jacaranda</a></li><br>
+					<li class="list"><i>The Rumpus, </i><a href="http://therumpus.net/2015/11/the-sunday-rumpus-essay-catalina/" target="_blank">Catalina</a></li><br>
+					<li class="list"><i>Literary Hub, </i><a href="http://lithub.com/in-praise-of-the-mighty-zine/" target="_blank">In Praise of the Mighty Zine</a></li><br>
+					<li class="list"><i>Los Angeles Review of Books, </i><a href="https://lareviewofbooks.org/article/santa-anas" target="_blank">Santa Anas</a></li><br>
+					<li class="list"><i>The Millions, </i><a href="http://www.themillions.com/2015/03/our-best-work-on-man-rays-hollywood-album-and-me.html" target="_blank">Our Best Work: On Man Ray's Hollywood Album and Me</a></li><br>
+					<li class="list"><i>The Hairpin, </i><a href="https://thehairpin.com/what-jean-rhys-taught-me-about-loneliness-230387bab743" target="_blank">What Jean Rhys Taught Me About Loneliness</a></li><br>
+					<li class="list"><i>The Nervous Breakdown, </i><a href="http://www.thenervousbreakdown.com/jacobsl/2015/08/elizabeth/" target="_blank">Elizabeth</a></li><br>
+					<li class="list"><i>Minor Literatures, </i><a href="https://minorliteratures.com/tag/liska-jacobs/" target="_blank">Cocktail Napkin Series</a></li><br>
+					<li class="list"><i>The Manifest-Station, </i><a href="http://themanifeststation.net/2016/05/02/childhood-revisited/" target="_blank">Childhood Revisited</a></li><br>
+					<li class="list"><i>Talking Book, </i><a href="http://talkingbook.pub/great-things/" target="_blank">Great Things</a></li>
+				</ul>
+
+			</div>
+
+		</section>
+
+
+	<!-- BLURB -->
+
+		<section id="blurb">
+
+			<div class="container">
+	  			<p class="quote"><i>“Liska Jacobs writes crystal-clear, hypnotically sensual prose, and <i>Catalina</i> is California noir at its darkest and sharpest.”</i><br><span style="opacity:0.6; font-size: 16px;">Kate Christensen, author of <i>The Great Man</i> and <i>In the Drink</i></span></p>
+	  		</div>
+
+		</section>
+
+
+	<!-- ABOUT -->
+
+		<section id="about">
+
+			<div class="container">
+
+				<img src="images/liska.png" alt="Author photo" width="200px" height="auto" />
+				<h1>About the Author</h1><br>
+  				<p id="bio">Liska Jacobs holds an MFA from the University of California, Riverside. Her essays and short fiction have appeared in <i>The Rumpus</i>, <i>Los Angeles Review of Books</i>, <i>Literary Hub</i>, <i>The Millions</i>, and <i>The Hairpin</i>, among other publications.<br><i>Catalina</i> is her first novel.</p>
+
+	  		</div>
+
+		</section>
+
+
+	<!-- BLURB -->
+
+		<section id="blurb">
+
+			<div class="container">
+	  			<p class="quote"><i>“Like a love child of Joan Didion and Kate Braverman...”</i><br><span style="opacity:0.6; font-size: 16px;">Gina Frangello, author of <i>A Life in Men</i> and <i>Every Kind of Wanting</i></span></p>
+	  		</div>
+
+		</section>
+
+
+	<!-- PRESS -->
+
+		<section id="press">
+
+			<div class="container">
+
+				<h1>Press</h1><br>
+				<ul>
+					<li class="list"><a href="http://www.huffingtonpost.com/entry/best-fall-books-2017_us_59a991dee4b0dfaafcf01955" target="_blank">Huffington Post, 28 Must-Read Fall Books</a></li><br>
+					<li class="list"><a href="http://www.powells.com/book/catalina-9780374119751" target="_blank">Staff Pick at Powell's</a></li><br>
+					<li class="list"><a href="https://www.publishersweekly.com/978-0-374-11975-1" target="_blank">Publisher's Weekly</a></li><br>
+					<li class="list"><a href="https://www.kirkusreviews.com/book-reviews/liska-jacobs/catalina-jacobs/" target="_blank">Kirkus</a></li><br>
+					<li class="list"><a href="http://www.latimes.com/books/jacketcopy/la-ca-jc-mcd-imprint-20170728-story.html" target="_blank">LA Times, FSG's New Imprint MCD</a></li><br>
+					<li class="list"><a href="http://www.ladowntownnews.com/arts_and_entertainment/hearing-voices-at-the-last-bookstore/article_3b3f89fa-5335-11e5-8ca5-7bfadf27612f.html" target="_blank">LA Downtown News, The Last Bookstore</a></li><br>
+					
+				</ul>
+
+	  		</div>
+
+		</section>
+
+
+	<!-- BLURB -->
+
+		<section id="blurb">
+
+			<div class="container">
+	  			<p class="quote"><i>“…Liska Jacobs writes with teeth; this book’s got bite.”</i><br><span style="opacity:0.6; font-size: 16px;">Jill Alexander Essbaum, <i>――New York Times</i>-bestselling author of <i>Hausfrau</i></span></p>
+	  		</div>
+
+		</section>
+
+
+	<!-- CONTACT -->
+
+		<section id="contact">
+
+			<div class="container">
+
+				<h1>Contact</h1><br>
+				<p id="contact-info">
+					<a href="mailto:liska@liskajacobs.com">liska@liskajacobs.com</a><br><br>
+					<div class="social">
+						<a href="http://liskab.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
+						<a href="https://www.facebook.com/liska.jacobs?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/LiskaJacobs" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a style="margin:0px;" href="https://www.instagram.com/liskab/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+					</div><br>
+					<span style="opacity:0.6;">Representation:</span><br>Dara Hyde<br>Hill Nadell Literary Agency<br><a href="http://www.hillnadell.com/" target="_blank">www.hillnadell.com</a></p>
+
+			</div>
+
+		</section>
+
+	</main>
+
+<!-- FOOTER -->
+
 	<footer>© 2017 Liska Jacobs, All Rights Reserved.</footer>
-	<script>
-		$(document).ready(function() {
-    		$('#pagepiling').pagepiling({
-    			anchors: ['Home', 'Catalina', 'Writings', 'About', 'Contact'],
-    			menu: '#menu'
-    		});
-		});
-	</script>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
