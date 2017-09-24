@@ -192,6 +192,15 @@ section a:hover, a:visited {
 	height: auto;
 }
 
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
 footer {
 	text-align: center;
 	color: rgba(255,255,255,0.3) !important;
