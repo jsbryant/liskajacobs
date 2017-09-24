@@ -39,3 +39,13 @@ function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
+
+
+// LAZY LOAD SCRIPT
+
+[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
