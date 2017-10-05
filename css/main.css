@@ -34,6 +34,12 @@ body {
 	margin: 0 auto;
 }
 
+.content-wrap {
+	max-width: 1000px;
+	overflow: auto;
+	margin: 0 auto;
+}
+
 .navbar-default {
 	position: relative;
 	top: 12px;
