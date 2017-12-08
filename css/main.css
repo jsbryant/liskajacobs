@@ -20,6 +20,10 @@ body {
     height: 50px;
     display: block;
     text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     border-radius: 8px;
@@ -30,25 +34,10 @@ body {
     -o-transition: all 0.1s linear;
     transition: all 0.1s linear;
 }
-#return-to-top i {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 16px;
-    top: 12px;
-    font-size: 19px;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    -ms-transition: all 0.1s linear;
-    -o-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-}
+
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.6);
-}
-#return-to-top:hover i {
-    color: #fff;
-    top: 8px;
+    color: rgba(255, 255, 255, 1);
 }
 /* end return to top btn */
 
