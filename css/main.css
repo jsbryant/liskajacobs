@@ -24,9 +24,9 @@ body {
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 8px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     display: none;
     -webkit-transition: all 0.1s linear;
     -moz-transition: all 0.1s linear;
