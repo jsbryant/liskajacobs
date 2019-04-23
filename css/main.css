@@ -10,6 +10,27 @@ body {
 	color: WHITESMOKE;
 }
 
+a:link, a:visited {
+	text-decoration: none;
+	color: WHITESMOKE;
+	opacity: 0.7;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	opacity: 1;
+}
+
+nav a:link, nav a:visited {
+	text-decoration: none;
+	color: #967cfb;
+	opacity: 1;
+}
+
+nav a:hover, nav a:active {
+	text-decoration: underline;
+}
+
 /* return to top btn */
 #return-to-top {
     position: fixed;
@@ -53,25 +74,17 @@ body {
 	padding: 10px;
 }
 
-.navbar-default {
-	position: relative;
-	top: 12px;
-}
-
-.navbar-default a:link, a:visited {
-	text-decoration: none;
-	color: WHITESMOKE;
-}
-
-.navbar-default a:hover, a:visited {
-	text-decoration: underline;
-}
-
 header {
 	width: 100%;
 	padding: 20px 0;
-	background-color: SALMON;
+	background-color: #f9efef;
 	overflow: auto;
+	color: #333;
+}
+
+header .navbar-default {
+	position: relative;
+	top: 12px;
 }
 
 header #logo {
@@ -93,29 +106,56 @@ header li:last-child {
 	padding-right: 0;
 }
 
+.navbar-default {
+	position: relative;
+	top: 12px;
+}
+
 section {
 	width: 100vw;
 	padding: 60px 0;
 }
 
-section a:link, a:visited {
-	text-decoration: none;
-	color: WHITESMOKE;
-	opacity: 0.7;
-}
-
-section a:hover, a:visited {
-	text-decoration: underline;
-	opacity: 1;
-}
-
 #synopsis {
-	background-color: SALMON;
 	padding-top: 40px !important;
 	overflow: auto;
 }
 
+.synop1 {
+	background-color: #f9efef;
+	color: #333;
+}
+
+.synop2 {
+	background-color: SALMON;
+}
+
+#synopsis .container {
+	display: flex;
+	justify-content: center;
+}
+
+#synopsis .container .book-cover, #synopsis .container .description {
+	width: 50%;
+	max-width: 480px;
+}
+
 .preorder {
+	font-size: 16px;
+	padding: 12px 32px;
+	border: none;
+	border-radius: 25px;
+	background-color: #967cfb;
+	opacity: 1 !important;
+	color: #fff !important;
+	box-shadow: 0px 2px 10px rgb(150, 124, 252, 0.5);
+}
+
+.preorder:hover {
+	text-decoration: none;
+}
+
+.order {
 	font-size: 16px;
 	padding: 12px 32px;
 	border: none;
@@ -126,7 +166,7 @@ section a:hover, a:visited {
 	box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
 }
 
-.preorder:hover {
+.order:hover {
 	text-decoration: none;
 }
 
@@ -222,13 +262,13 @@ img[data-src] {
 
 footer {
 	text-align: center;
-	color: rgba(255,255,255,0.3) !important;
+	color: rgba(255,255,255,0.3);
 	font-size: 12px;
 	padding: 18px 0;
 	background-color: #25232e;
 }
 
-@media only screen and (max-width: 728px) {
+@media only screen and (max-width: 768px) {
 	header #logo{
 		float: none;
 		text-align: center;
@@ -240,5 +280,19 @@ footer {
 	header li{
 		padding-right: 10px;
 		font-size: 14px;
+	}
+	#synopsis .container {
+		flex-direction: column;
+	}
+	#bookcover {
+		height: 100%;
+	}
+	#synopsis .container .book-cover, #synopsis .container .description {
+		width: 100%;
+		max-width: 100%;
+	}
+	#synopsis .container .book-cover {
+		display: flex;
+		justify-content: center;
 	}
 }
