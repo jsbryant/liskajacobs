@@ -89,7 +89,6 @@ header .navbar-default {
 
 header #logo {
 	float: left;
-	font-size: 30px;
 }
 
 header ul {
@@ -271,7 +270,10 @@ footer {
 @media only screen and (max-width: 768px) {
 	header #logo{
 		float: none;
-		text-align: center;
+		position: relative;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
 	header ul {
 		float: none;
