@@ -1,3 +1,15 @@
+// Slick carousel
+$(document).ready(function(){
+      $('.blurbs').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false
+      });
+});
+
+
 // smooth scrolling
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -46,3 +58,6 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     img.removeAttribute('data-src');
   };
 });
+
+
+
