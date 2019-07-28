@@ -202,10 +202,10 @@ section {
 	height: auto;
 }
 
-.slick-slider .slick-list {
+/* .slick-slider .slick-list {
         display: flex;
 	align-items: center;
-}
+} */
 
 img {
 	opacity: 1;
