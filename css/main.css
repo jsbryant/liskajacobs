@@ -15,6 +15,11 @@ body {
 	color: #333;
 }
 
+h2 {
+	font-size: 1em;
+	margin-bottom: 2em;
+}
+
 a:link, a:visited {
 	text-decoration: none;
 	color: #967cfb;
