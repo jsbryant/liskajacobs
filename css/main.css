@@ -41,6 +41,8 @@ h2 {
 	position: absolute;
 	top: 0em;
 	left: 50%;
+	-ms-transform: translate(-50%, -50%); /* IE 9 */
+  	-webkit-transform: translate(-50%, -50%); /* Safari 3-8 */
 	transform: translate(-50%, -50%);
 	background: #fff;
 	width: 3rem;
