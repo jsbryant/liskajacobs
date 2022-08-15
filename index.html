@@ -203,7 +203,6 @@
 	<footer>
 		© 2022 Liska Jacobs, All Rights Reserved<br>Design &amp; code by <a href="http://jordanbryant.design/" target="_blank">Jordan Bryant</a>
 	</footer>
-	
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -211,6 +210,18 @@
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="js/vendor/tilt.jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+		if (window.location.hash && isChrome) {
+		    setTimeout(function () {
+			var hash = window.location.hash;
+			window.location.hash = "";
+			window.location.hash = hash;
+		    }, 300);
+		}
+	    });
+	</script>
 
 </body>
 </html>
