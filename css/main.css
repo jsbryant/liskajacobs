@@ -357,6 +357,16 @@ img[data-src] {
 	opacity: 0;
 }
 
+.col-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.col-container-1, .col-container-2, .col-container-3 {
+	max-width: 25vw;
+} 
+
 footer {
 	text-align: center;
 	font-size: 12px;
@@ -393,5 +403,14 @@ footer {
 	#synopsis .container .book-cover {
 		display: flex;
 		justify-content: center;
+	}
+	.col-container {
+	flex-direction: column;
+	}
+	.col-container-1, .col-container-2, .col-container-3 {
+	max-width: 90vw;
+	}
+	#bookcover {
+		float: none;
 	}
 }
