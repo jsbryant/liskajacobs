@@ -368,6 +368,10 @@ img[data-src] {
 } 
 
 footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
 	text-align: center;
 	font-size: 12px;
 	padding: 18px 0;
