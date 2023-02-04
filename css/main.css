@@ -371,6 +371,7 @@ img[data-src] {
 	display: flex;
 	flex-direction: column;
 	width: 60vw;
+}
 
 footer {
 	position: relative;
