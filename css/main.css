@@ -365,7 +365,12 @@ img[data-src] {
 
 .col-container-1, .col-container-2, .col-container-3 {
 	max-width: 25vw;
-} 
+}
+
+#writings .container {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
 
 footer {
 	position: relative;
@@ -416,5 +421,10 @@ footer {
 	}
 	#bookcover {
 		float: none;
+	}
+	#writings .container {
+		display: flex;
+		flex-direction: column;
+		width: 90vw;
 	}
 }
