@@ -29,6 +29,10 @@ h2 {
 	margin-bottom: 1em;
 }
 
+#author-photo {
+	margin-bottom: 2rem;
+}
+
 /* Blockquote by Harm Putman https://codepen.io/harmputman/pen/IpAnb */
 .synop0 blockquote {
 	display: block;
